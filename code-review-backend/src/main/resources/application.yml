@@ -1,0 +1,27 @@
+# 本机路径和数据库密码写在 application-local.yml，不要提交那份文件。
+codemate:
+  repo:
+    path: ${CODEMATE_REPO_PATH:../my-test-repo}
+
+spring:
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:local}
+  task:
+    scheduling:
+      enabled: true
+  datasource:
+    url: ${DB_URL:jdbc:mysql://127.0.0.1:3306/code_guardian?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:}
+  jpa:
+    hibernate:
+      # 自动按实体建表/加列。上线后再改成 validate
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+ai:
+  service:
+    url: ${AI_SERVICE_URL:http://127.0.0.1:8000}

@@ -1,0 +1,68 @@
+:root {
+  --bg: #f0f2f5;
+  --panel: #ffffff;
+  --text: #1f2329;
+  --text-secondary: #646a73;
+  --border: #e5e6eb;
+  --brand: #2b6cb0;
+  --brand-dark: #1a365d;
+  --sidebar: #1b2330;
+  --sidebar-hover: #243044;
+  --shadow: 0 8px 24px rgba(27, 35, 48, 0.06);
+  --radius: 12px;
+}
+
+* { box-sizing: border-box; }
+
+html,
+body,
+#app {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.page-head h2 {
+  margin: 0 0 6px;
+  font-size: 22px;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.page-head p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.hash {
+  font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+  font-size: 13px;
+}
+
+.el-table {
+  --el-table-header-bg-color: #f7f8fa;
+  --el-table-row-hover-bg-color: #eef4fb;
+}

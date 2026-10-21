@@ -1,0 +1,29 @@
+# secrets and machine-local config
+.env
+**/.env
+key.txt
+**/key.txt
+application-local.yml
+**/application-local.yml
+
+# python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# java / node
+**/target/
+**/dist/
+node_modules/
+
+# editors
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# 本机被扫描的演示仓库，不进开源仓库
+my-test-repo/
